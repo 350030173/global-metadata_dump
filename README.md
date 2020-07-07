@@ -1,1 +1,1 @@
-# global-metadata_dump
+# frida -U -l dump.js 你的包名
