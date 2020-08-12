@@ -1,5 +1,6 @@
 //
 //获取解密后的global-metadata.dat
+//github:https://github.com/350030173/global-metadata_dump
 //
 //用法：
 //frida -U -l global-metadata_dump.js packagename
