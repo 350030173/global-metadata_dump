@@ -41,7 +41,7 @@ function get_self_process_name()
 	return "-1";
 }
 
-var pattern = "AF 1B B1 FA 18";
+var pattern = "AF 1B B1 FA 18";//global-metadata.dat头部特征
 function frida_Memory()
 {
     Java.perform(function ()
@@ -99,4 +99,4 @@ function frida_Memory()
     );
 }
 
-setImmediate(frida_Memory); //global-metadata.dat头部特征
+setImmediate(frida_Memory); 
