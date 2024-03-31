@@ -81,12 +81,15 @@ function frida_Memory()
                         //根据两个偏移得出global-metadata大小
                         var global_metadata_size = DefinitionsOffset_size + DefinitionsCount_size
                         console.log("大小：", global_metadata_size);
-                        var file = new File("/data/data/" + get_self_process_name() + "/global-metadata.dat", "wb");
-                        file.write(Memory.readByteArray(address, global_metadata_size));
-                        file.flush();
-                        file.close();
-                        console.log('路径：' + "/data/data/" + get_self_process_name() + "/global-metadata.dat");
-                        console.log('导出完毕...');
+
+			if (global_metadata_size > 0) {
+	                        var file = new File("/data/data/" + get_self_process_name() + "/global-metadata.dat", "wb");
+	                        file.write(Memory.readByteArray(address, global_metadata_size));
+	                        file.flush();
+	                        file.close();
+	                        console.log('路径：' + "/data/data/" + get_self_process_name() + "/global-metadata.dat");
+	                        console.log('导出完毕...');
+			}
                     },
                     onComplete: function ()
                     {
