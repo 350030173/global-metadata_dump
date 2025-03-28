@@ -8,9 +8,10 @@ u3d游戏global-metadata.dat加密，根据global-metadata.dat头部特征，从
 
 
 QQ群：
+
 手游安全分析:542863693
 
-\n手游安全分析2群:812701781
+手游安全分析2群:812701781
 
 
 ![ZSXQ_20250328_114222574](https://github.com/user-attachments/assets/9a67e660-c1c6-4922-b7b7-6574facbd24f)
